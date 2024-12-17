@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atribut Boolean</title>
+  </head>
+  <body>
+    <b>Atribut Boolean</b>
+    <ul>
+      <li>
+        <b style="color: red;">1. Checked</b><br />
+        Makna: Menandai elemen <b>&lt;input&gt;</b> tipe checkbox atau radio sebagai tercentang atau terpilih secara default.<br />
+        <li>
+          Contoh:<br />
+          &lt;input type="checkbox" checked&gt; Checkbox ini tercentang<br />
+          &lt;input type="radio" checked&gt; Radio button ini terpilih
+        </li>
+      </li>
+
+      <li>
+        <b style="color: red;">2. Disabled</b><br />
+        Makna: Menonaktifkan elemen sehingga tidak dapat digunakan atau diinteraksi oleh pengguna.<br />
+        <li>
+          Contoh:<br />
+          &lt;button disabled&gt;Tombol ini dinonaktifkan&lt;/button&gt;<br />
+          &lt;input type="text" disabled placeholder="Input ini dinonaktifkan"&gt;
+        </li>
+      </li>
+
+      <li>
+        <b style="color: red;">3. Readonly</b><br />
+        Makna: Membuat elemen input hanya bisa dibaca tanpa bisa diubah oleh pengguna.<br />
+        <li>
+          Contoh:<br />
+          &lt;input type="text" readonly value="Hanya bisa dibaca"&gt;<br />
+          &lt;textarea readonly&gt;Teks ini tidak bisa diedit&lt;/textarea&gt;
+        </li>
+      </li>
+
+      <li>
+        <b style="color: red;">4. Required</b><br />
+        Makna: Menjadikan elemen input wajib diisi sebelum formulir dikirim.<br />
+        <li>
+          Contoh:<br />
+          &lt;input type="text" required placeholder="Harus diisi"&gt;
+        </li>
+      </li>
+
+      <li>
+        <b style="color: red;">5. Autofocus</b><br />
+        Makna: Otomatis memfokuskan elemen input saat halaman dimuat.<br />
+        <li>
+          Contoh:<br />
+          &lt;input type="text" autofocus placeholder="Input ini mendapat fokus"&gt;
+        </li>
+      </li>
+
+      <li>
+        <b style="color: red;">6. Multiple</b><br />
+        Makna: Mengizinkan pengguna memilih lebih dari satu file atau opsi.<br />
+        <li>
+          Contoh:<br />
+          &lt;input type="file" multiple&gt;<br />
+          &lt;select multiple&gt;<br />
+          &nbsp;&nbsp;&lt;option&gt;Opsi 1&lt;/option&gt;<br />
+          &nbsp;&nbsp;&lt;option&gt;Opsi 2&lt;/option&gt;<br />
+          &lt;/select&gt;
+        </li>
+      </li>
+
+      <li>
+        <b style="color: red;">7. Hidden</b><br />
+        Makna: Menyembunyikan elemen dari tampilan pengguna tanpa menghapusnya dari DOM.<br />
+        <li>
+          Contoh:<br />
+          &lt;div hidden&gt;Ini elemen tersembunyi&lt;/div&gt;
+        </li>
+      </li>
+
+      <li>
+        <b style="color: red;">8. Autoplay</b><br />
+        Makna: Memutar media (audio/video) secara otomatis saat halaman dimuat.<br />
+        <li>
+          Contoh:<br />
+          &lt;video src="video.mp4" autoplay&gt;&lt;/video&gt;
+        </li>
+      </li>
+
+      <li>
+        <b style="color: red;">9. Loop</b><br />
+        Makna: Memutar ulang media secara otomatis setelah selesai.<br />
+        <li>
+          Contoh:<br />
+          &lt;audio src="audio.mp3" loop&gt;&lt;/audio&gt;
+        </li>
+      </li>
+
+      <li>
+        <b style="color: red;">10. Controls</b><br />
+        Makna: Menampilkan kontrol media seperti play, pause, dan volume pada elemen audio/video.<br />
+        <li>
+          Contoh:<br />
+          &lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;<br />
+          &lt;video src="video.mp4" controls&gt;&lt;/video&gt;
+        </li>
+      </li>
+
+      <li>
+        <b style="color: red;">11. Selected</b><br />
+        Makna: Menandai opsi pada elemen select sebagai pilihan default.<br />
+        <li>
+          Contoh:<br />
+          &lt;select&gt;<br />
+            &nbsp;&nbsp;&lt;option&gt;Opsi 1&lt;/option&gt;<br />
+            &nbsp;&nbsp;&lt;option selected&gt;Opsi 2 (terpilih)&lt;/option&gt;<br />
+          &lt;/select&gt;
+        </li>
+      </li>
+
+      <li>
+        <b style="color: red;">12. Novalidate</b><br />
+        Makna: Menonaktifkan validasi form bawaan browser saat dikirim.<br />
+        <li>
+          Contoh:<br />
+          &lt;form novalidate&gt;<br />
+            &nbsp;&nbsp;&lt;input type="email" placeholder="Masukkan email"&gt;<br />
+            &nbsp;&nbsp;&lt;button type="submit"&gt;Submit&lt;/button&gt;<br />
+          &lt;/form&gt;
+        </li>
+      </li>
+
+      <li>
+        <b style="color: red;">13. Open</b><br />
+        Makna: Menampilkan detail terbuka secara default pada elemen &lt;details&gt;.<br />
+        <li>
+          Contoh:<br />
+          &lt;details open&gt;<br />
+            &nbsp;&nbsp;&lt;summary&gt;Judul Detail&lt;/summary&gt;<br />
+            &nbsp;&nbsp;Isi dari elemen detail.<br />
+          &lt;/details&gt;
+        </li>
+      </li>
+
+      <li>
+        <b style="color: red;">14. Reversed</b><br />
+        Makna: Membalik urutan daftar terurut (`<ol>`).<br />
+        <li>
+          Contoh:<br />
+          &lt;ol reversed&gt;<br />
+            &nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br />
+            &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br />
+            &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br />
+          &lt;/ol&gt;
+        </li>
+      </li>
+
+      <li>
+        <b style="color: red;">15. Spellcheck</b><br />
+        Makna: Mengaktifkan pengecekan ejaan.<br />
+        <li>
+          Contoh:<br />
+          &lt;input type="text" spellcheck="true" placeholder="Cek ejaan aktif"&gt;
+        </li>
+      </li>
+
+      <li>
+        <b style="color: red;">16. Download</b><br />
+        Makna: Menyediakan link untuk mengunduh file.<br />
+        <li>
+          Contoh:<br />
+          &lt;a href="file.pdf" download&gt;Download File PDF&lt;/a&gt;
+        </li>
+      </li>
+
+      <li>
+        <b style="color: red;">17. Async</b><br />
+        Makna: Menjalankan skrip secara asynchronous.<br />
+        <li>
+          Contoh:<br />
+          &lt;script src="script.js" async&gt;&lt;/script&gt;
+        </li>
+      </li>
+
+      <li>
+        <b style="color: red;">18. Defer</b><br />
+        Makna: Menunda eksekusi skrip hingga halaman selesai dimuat.<br />
+        <li>
+          Contoh:<br />
+          &lt;script src="script.js" defer&gt;&lt;/script&gt;
+        </li>
+      </li>
+    </ul>
+  </body>
+</html>
