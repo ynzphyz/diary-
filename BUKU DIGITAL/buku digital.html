@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+</head>
+<body>
+
+    <div class="side-decoration side-decoration-left"></div>
+    <div class="side-decoration side-decoration-right"></div>
+ 
+    <div class="floating-icon floating-icon-left">
+        <i class="fas fa-lightbulb"></i>
+    </div>
+
+    <div class="floating-icon floating-icon-right">
+        <i class="fas fa-code"></i>
+    </div>
+
+    <div class="floating-icon floating-icon-left">
+        <i class="fas fa-lightbulb"></i>
+    </div>
+
+    <div class="floating-icon floating-icon-right">
+        <i class="fas fa-code"></i>
+    </div>
+
+    
+    <div class="sticky-note sticky-note-left">
+        Tip: E-BOOK INI BISA MENAMBAH PENGETAHUAN MU
+    </div>
+    <div class="sticky-note sticky-note-right">
+        Fun fact: HTML pertama kali diciptakan pada tahun 1990!
+    </div>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+            <img src="gambar/html-removebg-preview.png" alt="HTML" class="logo" >
+            <img src="gambar/js-removebg-preview.png" alt="CSS" class="logo">
+            </div>
+
+            <h1>HTML&JS</h1>
+            <div class="header-line"></div>
+        </header>
+
+        <nav class="table-of-contents" id="daftar-isi">
+            <h2><i class="fas fa-list"></i> Daftar Isi</h2>
+            <ul>
+                <li><a href="#bab1"><i class="fas fa-book"></i> Bab 1: Pendahuluan</a></li>
+                <li><a href="#bab2"><i class="fas fa-book"></i> Bab 2: Dasar-dasar HTML</a></li>
+                <li><a href="#bab3"><i class="fas fa-book"></i> Bab 3: Dasar-dasar JavaScript</a></li>
+                <li><a href="#bab4"><i class="fas fa-book"></i> Bab 4: Interaksi HTML dengan JavaScript</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="bab1" class="chapter" >
+                <div data-aos="fade-up"
+                data-aos-duration="3000">
+                <h2 ><i class="fas fa-bookmark" ></i> Bab 1: Pendahuluan</h2>
+                <div class="chapter-content">
+                    <ul >
+                    <b>1.Apa itu HTML dan JS?</b>
+                        <li>HTML (HyperText Markup Language) adalah bahasa yang digunakan untuk membuat struktur dari halaman web.</li>
+                        <li>JavaScript adalah bahasa pemrograman yang memungkinkan kita menambahkan interaktivitas pada halaman web, seperti animasi, validasi formulir, dan reaksi pengguna terhadap elemen.
+                        </li>
+                    <b>2.Fungsi dan Kegunaan HTML & JavaScript</b>
+                        <li>HTML berfungsi untuk menampilkan teks, gambar, video, dan konten lainnya dalam struktur yang terorganisir pada halaman web.</li>
+                        <li>JavaScript digunakan untuk membuat halaman lebih interaktif dan responsif, memungkinkan pengguna untuk berinteraksi secara langsung dengan elemen di halaman.</li>
+                    </ul>
+                    <a href="#daftar-isi" class="back-to-top"><i class="fas fa-arrow-up"></i> Kembali ke Daftar Isi</a>
+                </div>
+            </div>
+            </section>
+
+            <section id="bab2" class="chapter" >
+                <div data-aos="fade-up"
+                data-aos-duration="3000">
+                <h2 ><i class="fas fa-bookmark"></i> Bab 2: Dasar-dasar HTML</h2>
+                <div class="chapter-content">
+                    <p ><b>1.Struktur dasar HTML</b></p>
+                    <img src="gambar/Screenshot 2024-10-29 140200.png" alt="HTMLstruktur"  class="responsive-image">
+
+                    <p ><b>Penjelasan Struktur:</b></p>
+                    <ul >
+                        <li>
+                            <b>!DOCTYPE html:</b> Menandakan bahwa dokumen menggunakan HTML5. </li>
+                           <li> <b>HTML :</b> Tag utama yang membungkus seluruh konten halaman.</li>
+                            <li><b>head :</b> Bagian yang berisi metadata dan pengaturan untuk halaman.</li>
+                            <li><b>body: </b> Bagian yang menampilkan konten yang dilihat pengguna.</li>
+                    </ul>
+
+                    <a href="#daftar-isi" class="back-to-top"><i class="fas fa-arrow-up"></i> Kembali ke Daftar Isi</a>
+                </div>
+            </div>
+            </section>
+            
+            <section id="bab3" class="chapter" >
+                <div data-aos="fade-up"
+                data-aos-duration="3000">
+                <h2><i class="fas fa-bookmark"></i> Bab 3: Dasar-dasar JavaScript</h2>
+                <div class="chapter-content">
+                    <p><b>1.Menyisipkan JavaScript ke HTML Ada dua cara untuk menambahkan JavaScript ke HTML:</b></p>
+                    <ul>
+                        <li><b>Internal:</b> Menggunakan tag  script  di dalam HTML.</li>
+                        <li><b>Eksternal:</b> Menggunakan file .js eksternal.</li>
+                    </ul>
+                    <p><b>Contoh JavaScript sederhana:</b></p>
+                    <img src="gambar/Screenshot 2024-10-29 142702.png" alt="js"  class="responsive-image">
+                    <p><b>Penjelasan:</b></p>
+                    <ul>
+                        <li><b>function menyapa():</b> Fungsi JavaScript yang menampilkan pesan "Halo, selamat datang!" saat tombol diklik.</li>
+                        <li><b>onclick:</b> Event listener yang memanggil fungsi JavaScript ketika tombol diklik.</li>
+                    </ul>
+
+                    <a href="#daftar-isi" class="back-to-top"><i class="fas fa-arrow-up"></i> Kembali ke Daftar Isi</a>
+                </div>
+            </div>
+            </section>
+
+            <section id="bab4" class="chapter" >
+                <div data-aos="fade-up"
+                data-aos-duration="3000">
+                <h2><i class="fas fa-bookmark"></i> Bab 4: Interaksi HTML dengan JavaScript</h2>
+                <div class="chapter-content">
+                    <p><b>1. Mengakses dan Mengubah Elemen HTML JavaScript memungkinkan kita untuk mengakses elemen HTML dan mengubahnya. Salah satu metode yang paling umum adalah</b> <strong style="color: aqua;">document.getElementById.</strong> JavaScript memungkinkan kita untuk berinteraksi dengan elemen HTML di halaman web. Salah satu cara untuk mengakses elemen HTML tertentu adalah dengan menggunakan metode document.getElementById(). Metode ini akan mencari elemen HTML berdasarkan nilai atribut id dan mengembalikannya sehingga bisa dimodifikasi oleh JavaScript.</p>
+                    <p><b>Contoh mengubah konten HTML</b></p>
+                    <img src="gambar/Screenshot 2024-10-29 143357.png" alt="js" class="responsive-image">
+                    <p><b>Penjelasan:</b></p>
+                    <p>1. Tag <b>P</b> dengan ID "paragraf":</p>
+                    <ul>
+                        <li>Tag <b>P</b> ini memiliki atribut id="paragraf", yang berfungsi sebagai identitas unik. Dengan ID ini, JavaScript dapat mencari elemen ini secara spesifik di dalam halaman.</li>
+                    </ul>
+                    <p>2.Fungsi JavaScript <b>ubahTeks():</b></p>
+                    <ul>
+                        <li>Setelah elemen ditemukan, kita mengubah kontennya menggunakan <b>.innerHTML = "Teks telah diubah!"</b>. Properti <b>innerHTML</b> memungkinkan kita untuk mengganti konten HTML yang ada di dalam elemen tersebut.</li>
+                    </ul>
+                    <p>3. Tombol <b>button onclick="ubahTeks()">Ubah Teks button:</b></p>
+                    <ul>
+                        <li>Tombol ini menggunakan atribut <b>onclick="ubahTeks()"</b>, yang berarti saat tombol ini diklik, fungsi <b>ubahTeks()</b> akan dipanggil.</li>
+                        <li>Ketika fungsi dipanggil, JavaScript akan mencari elemen <b>p</b> dengan <b>id="paragraf"</b> dan mengubah teks di dalamnya menjadi "Teks telah diubah!".</li>
+                    </ul>
+
+                    <a href="#daftar-isi" class="back-to-top"><i class="fas fa-arrow-up"></i> Kembali ke Daftar Isi</a>
+                </div>
+            </div>
+            </section>
+        </main>
+
+        <section class="testimonials">
+            <h2>E-Book Pengertian HTML&JAVASCRIPT</h2>
+            <blockquote>
+                <p>"Buku ini sangat membantu dalam memahami HTML dan JavaScript!"</p>
+                <cite>- Sebastian Alexander Eka Cahyana</cite>
+            </blockquote>
+        </section>
+        <footer>
+           
+            <p><i class="fas fa-copyright"></i> 2024 Buku Digital Sebastian. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://r.search.yahoo.com/_ylt=AwrKFjQ_mCBn_gEASMfLQwx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1731398976/RO=10/RU=https%3a%2f%2fwww.facebook.com%2f/RK=2/RS=qz9ZXwROyU7EIujh678owqVQm0w-"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://r.search.yahoo.com/_ylt=AwrKFjRRmCBn8QEAiGnLQwx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1731398993/RO=10/RU=https%3a%2f%2ftwitter.com%2f%3flang%3den-id/RK=2/RS=C0VfBcu5j810qxmW293gcyQwrvk-"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/ynzephyz/?__pwa=1#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
