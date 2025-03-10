@@ -46,7 +46,7 @@ function luasJajargenjang(){
    let hasilLuasnya = alasJajargenjang * tinggiJajargenjang;
    return hasilLuasnya 
 }
-  let hasilLuasnya = luasJajargenjang();
+  let hasilLuasnya = luasJajargenjang(); 
   alert(`luas jajargenjang mu adalah ${hasilLuasnya}`)
 
 
