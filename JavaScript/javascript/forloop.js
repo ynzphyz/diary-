@@ -7,9 +7,9 @@
 //bahasanya gini:nilai z atau let z itu nilai nya 0, z kurang dari 10 maka z++ atau z=z+1 atau bertambah nilainya
 //contoh pengimplementasian yang tepat:
 
-// for ( let z = 1; z <= 5; z++) {
-//     console.log('data ke -', z)
-// }
+for ( let z = 1; z <= 5; z++) {
+    console.log('data ke -', z)
+}
     //pengecualian jika mau sampai ke 10, for(let z = 0; z < 10; z++) ini akan menlooping sebanyak 9 kali kenapa karena mulai dari 0 dan z itu kurang dari 10
     //kalau mau barisannya ada 10 alias data ke - 10 maka:
     //for ( let z = 0; z <= 10; z++) ini artinya z itu kurang atau sama dengan sepuluh dimulai dari z itu nilainya 0 lalu dia akan bertambah ++

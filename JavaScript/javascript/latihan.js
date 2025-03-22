@@ -80,18 +80,19 @@ function bilangan() {
     let angkaArray = inputUser.split(" ").map(Number);
     return angkaArray.filter(num => num % 2 === 0);
 }
-const hasil = bilangan();
-console.log(hasil);
+const hasilee = bilangan();
+console.log(hasilee);
+
+//🔴 Hard (Sulit)
 
 //7️⃣ Cek Palindrom
 // Soal: Buat fungsi isPalindrome(kata) untuk mengecek apakah kata tersebut sama jika dibalik.
 // Clue: Bandingkan kata asli dengan hasil reverse().
 
 function isPalindrome() {
-    let kata = prompt('masukan kata');
-    let kataAsli = kata;
+    let kata = prompt('masukan kata').toLowerCase();
     let kataBalik = kata.split('').reverse().join('');
-    return kataAsli === kataBalik;
+    return kata === kataBalik;
 }
 if (isPalindrome()) {
     alert(`kata tersebut adalah palindrom `)
@@ -99,3 +100,54 @@ if (isPalindrome()) {
     alert(`kata tersebut bukan palindorm `)
 }
 
+//8️⃣ Hitung Jumlah Huruf Vokal dalam String
+// Soal: Buat fungsi yang menerima string dan menghitung jumlah huruf vokal (a, i, u, e, o) di dalamnya.
+// Clue: Gunakan for atau .filter() dengan includes() untuk mengecek apakah sebuah huruf adalah vokal.
+
+function hitungHuruf() {
+    let huruf = prompt('masukan huruf:');
+    if(!isNaN(huruf)) {
+        return 'input harus berupa huruf woi!!';
+    }
+
+    let vokal = ['a','i','u','e','o']
+    let hrufArray = huruf.toLowerCase().split('');
+
+    let vokalNya = hrufArray.filter(hurup =>  vokal.includes(hurup));
+    return vokalNya.length;
+}
+
+ console.log(hitungHuruf());
+
+
+//  9️⃣ Konversi Waktu (12 Jam ke 24 Jam)
+//  Soal: Buat fungsi convertTo24HourFormat(jam12) yang mengubah format "07:45 PM" menjadi "19:45".
+//  Clue: Gunakan split(':') untuk memisahkan jam dan menit, lalu konversi berdasarkan AM/PM.
+ 
+function konversiWaktu() {
+    let waktu = prompt('Masukkan waktu dalam format HH:MM (misal: 23:45)');
+    
+    if (!waktu || !waktu.includes(':')) {
+        return 'Format waktu tidak valid!';
+    }
+    
+    let bagian = waktu.split(':');
+    let jam = parseInt(bagian[0], 10);
+    let menit = parseInt(bagian[1], 10);
+    
+    if (isNaN(jam) || isNaN(menit) || jam < 0 || jam > 23 || menit < 0 || menit > 59) {
+        return 'Waktu tidak valid! Masukkan jam antara 00-23 dan menit antara 00-59.';
+    }
+
+    let periode = jam >= 12 ? 'PM' : 'AM';
+    if (jam > 12) {
+        jam -= 12;
+    } else if (jam === 0) {
+        jam = 12;
+    }
+
+    return `${jam}:${menit.toString().padStart(2, '0')} ${periode}`;
+}
+
+let hasil = konversiWaktu();
+console.log(`Waktu dalam format 12 jam: ${hasil}`);

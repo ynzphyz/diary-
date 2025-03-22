@@ -122,6 +122,7 @@ function randomNumber() {
 }
 
 randomNumber();
+
 //disini maksud dari code ini adalah
 //function randomNumber,lalu const acak angka Math.random adalah sebuah angka yang di acak oleh sistem setiap kali merefresh maka dia akan berubah setiap satu kali refresh
 //if,disini jika variabel acakAngka itu lebih dari 300 maka console.log akan tunjukan tulisan wow lebih dari 300 angkanya,maksudnya ketika Math.ranom * 1000 dia lebih 300 maka muncul lah di console.log
