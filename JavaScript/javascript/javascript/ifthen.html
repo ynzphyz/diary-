@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>p</title>
+    </head>
+    <body>
+        <h1>Konstruksi pemilihan if then:</h1>
+        <script>
+            var namaPegawai, jamMasuk, jamKeluar, jamLembur, jamKerja, gapok, lembur, potongan
+             jamKerja = 8
+             gapok = 100000
+             lembur = 2000
+             potongan = 1000
+             gaji = 0
+
+             namaPegawai = prompt('nama pegawai')
+             jamMasuk = (prompt('jam Masuk:','08.00'))
+             jamKeluar = (prompt('jam Keluar:','16.00'))
+
+             jamLembur = jamKeluar -eval (jamMasuk) - eval(jamKerja);
+            
+
+            if (jamLembur == 0) {
+                gaji = gapok
+            } else {
+                if (jamLembur > 0) {
+                    gaji = gaji + (jamLembur * lembur)
+                
+            } else {
+                jamkurang = jamLembur * -1
+                  gaji = gapok - jamkurang * potongan
+            }
+            }
+             document.write("Nama pegawai: " + namaPegawai + "<br>");
+             document.write("Jam masuk: "+ jamMasuk + "<br>");
+             document.write("Jam keluar: " + jamKeluar + "<br>");
+             document.write("lembur: " + jamLembur + 'jam' + "<br>");
+             document.write("Gaji: " + gaji + "<br>");
+
+            // var bil, jenis
+            // bil = 0
+            // jenis =""
+            // bil = prompt('masukan bilangan :')
+            // if ((bil % 2) == 0) {
+            //     jenis = 'bilangan genap'
+            // } else {
+            //     jenis = 'bilangan ganjil'
+            // }
+            //  document.write("<br> bilangan:  "+bil+" adalah "+jenis) 
+
+            // let bil, kelipatan, jenis
+            // bil = ""
+            // kelipatan = ""
+            // jenis = ""
+            // bil = prompt('masukan bilangan bulat:',bil )
+            // kelipatan = prompt('masukan bilangan kelipatan',kelipatan)
+            // if((bil % kelipatan)==0) {
+            //     jenis ="bilangan kelipatan " + kelipatan
+            // } else {
+            //     jenis = "bilangan bukan kelipatan " + kelipatan
+            // }
+            // document.write("<br> bilangan: "+bil+"  adalah  "+jenis)
+
+        </script>
+    </body>
+</html>             
