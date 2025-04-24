@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Input Array dari User</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Map + Filter + Reduce</h1>
+    <p>Masukkan angka (pisahkan dengan koma):</p>
+    <input type="text" id="inputAngka" placeholder="Contoh: 5, 10, 15" />
+    <button onclick="olahData()">Proses</button>
+
+    <div class="hasil">
+      <p>Data awal: <span id="awal"></span></p>
+      <p>Setelah map(+5): <span id="map"></span></p>
+      <p>Setelah filter(genap): <span id="filter"></span></p>
+      <p>Hasil reduce (jumlah): <span id="reduce"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
