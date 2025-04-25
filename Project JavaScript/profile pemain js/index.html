@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pemain</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Input Data Pemain</h1>
+        <form id="formPemain">
+            <input type="text" id="nama" placeholder="Nama Pemain" required>
+            <input type="text" id="karakter" placeholder="Karakter (Mage, Warrior, dll)" required>
+            <input type="text" id="kota" placeholder="Kota Asal" required>
+            <input type="number" id="kill" placeholder="Jumlah Kill" required>
+            <input type="number" id="death" placeholder="Jumlah Death" required>
+            <input type="number" id="assist" placeholder="Jumlah Assist" required>
+            <button type="submit">Tampilkan Profil</button>
+        </form>
+
+        <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
